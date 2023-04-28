@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SkollarsRegistration</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="visitor_registration">VISITOR REGISTRATION</string>
+    <string name="spot_registration">SPOT REGISTRATION</string>
+</resources>
