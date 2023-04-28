@@ -17,9 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        (this@MainActivity).title = "Welcome"
-
-        spot = "http://52.66.205.22/event/registration/expo/Mobile Application"
+        spot = "http://52.66.205.22/event/registration/expo/Spot Register"
         visitor = "http://52.66.205.22/event/registration/General Entry 2023-2024"
 
         binding.spot.setOnClickListener(View.OnClickListener {
@@ -30,26 +28,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity,WebViewActivity::class.java).putExtra("type",visitor))
         })
 
-      /*  binding.tabLayout.addOnTabSelectedListener(object : OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab) {
-                binding.viewPager.currentItem = tab.position
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab) {}
-            override fun onTabReselected(tab: TabLayout.Tab) {}
-        })
-
-        setUpData()*/
 
     }
 
-
-   /* private fun setUpData() {
-        val processReceiveTabAdapter = TabAdapter(
-            this@MainActivity,
-            supportFragmentManager, binding.tabLayout.tabCount
-        )
-        binding.viewPager.adapter = processReceiveTabAdapter
-        binding.viewPager.addOnPageChangeListener(TabLayoutOnPageChangeListener(binding.tabLayout))
-    }*/
 }
